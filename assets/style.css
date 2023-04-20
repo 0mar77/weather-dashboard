@@ -6,4 +6,125 @@
 
 body {
     display: grid;
+    height: 100vh;
 }
+
+header {
+    border: solid black;
+    grid-column: span 6;
+    position: relative;
+    margin: 10px;
+    background-color:#0A62D0;
+}
+
+h1 {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+aside {
+    grid-column: span 1;
+    grid-row: span 5;
+    margin: 10px;
+}
+
+#aside-h2 {
+    font-size: xx-large;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#search {
+    font-size: x-large;
+    margin-bottom: 10px;
+    width: 97%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: x-large;
+    margin-bottom: 10px;
+    width:100%;
+    padding: 5px;
+    background-color: #0A62D0;
+    color: white;
+    border-radius: 5px;
+}
+
+#history {
+    border-top: solid gray;
+    border-width: thin;
+    margin: 10px;
+    padding-top: 10px
+}
+
+#mexico {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#section-top {
+    grid-column: span 5;
+    grid-row: span 2;
+    border:solid black;
+    margin: 10px;
+    display: grid;
+}
+
+#current-city {
+    margin: 10px;
+    font-size: xx-large;
+}
+
+.top-info {
+    padding-left: 10px;
+    font-size: x-large;
+}
+
+#section-bottom {
+    grid-column: span 5;
+    grid-row: span 3;
+    /* border:solid black; */
+    display: grid;
+    margin: 10px;
+    color: white;
+}
+
+#bottom-h2 {
+    grid-column: span 5;
+    color:black;
+}
+
+.cards {
+    background-color:#05254d;
+    grid-row: span 2;
+    margin-right: 10px;
+    margin-bottom: 300px;
+    display: grid;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
