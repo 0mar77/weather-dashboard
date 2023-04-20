@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div>
+        <aside>
+            <h2>Search for a City</h2>
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search">
+                <button>Search</button>
+            </form>
+            <div id="history"></div>
+        </aside>
+        <main>
+            <section id="section-top">
+                <h2 id="current-city"></h2>
+                <h2 id="date"></h2>
+                <div>Temp:
+                    <div id="temperature"></div>
+                </div>
+                <div>Wind:
+                    <div id="wind"></div>
+                </div>
+                <div>Humidity:
+                    <div id="humidity"></div>
+                </div>
+            </section>
+            <section id="section-bottom">
+                <h2>5-Day Forcast:</h2>
+                <div id="day-1">
+                    <h3 id="date-1">Mon</h3>
+                    <div id="emoji">🌞</div>
+                    <div id="temp-1">Temp:</div>
+                    <div id="wind-1">Wind:</div>
+                    <div id="humidity-1">Humidity:</div>
+                </div>
+                <div id="day-2">
+                    <h3 id="date-2">Tue</h3>
+                    <div id="emoji">🌞</div>
+                    <div id="temp-2">Temp:</div>
+                    <div id="wind-2">Wind:</div>
+                    <div id="humidity-2">Humidity:</div>
+                </div>
+                <div id="day-3">
+                    <h3 id="date-3">wed</h3>
+                    <div id="emoji">🌞</div>
+                    <div id="temp-3">Temp:</div>
+                    <div id="wind-3">Wind:</div>
+                    <div id="humidity-3">Humidity:</div>
+                </div>
+                <div id="day-4">
+                    <h3 id="date-4">tur</h3>
+                    <div id="emoji">🌞</div>
+                    <div id="temp-4">Temp:</div>
+                    <div id="wind-4">Wind:</div>
+                    <div id="humidity-4">Humidity:</div>
+                </div>
+                <div id="day-5">
+                    <h3 id="date-5">fri</h3>
+                    <div id="emoji">🌞</div>
+                    <div id="temp-5">Temp:</div>
+                    <div id="wind-5">Wind:</div>
+                    <div id="humidity-5">Humidity:</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>
