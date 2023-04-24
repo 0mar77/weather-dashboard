@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <title>Weather</title>
+    <title>Weather Dashboard</title>
 </head>
 <body>
 
@@ -13,23 +13,21 @@
         <h1>Weather Dashboard</h1>
     </header>
 
+    <!-- Section with the form and search history -->
     <aside>
-        <h2 id="aside-h2">Search for a City:</h2>
         <form>
-            <input type="text" placeholder="Mexico City" id="search"> </br>
-            <button>Search</button>
+            <label for="city">Search for a City:</label> </br>
+            <input type="text" placeholder="Mexico City" id="city"> </br>
+            <button type="submit">Submit</button>
         </form>
-        <div id="history">
-            <div id="mexico">Mexico City</div>
-        </div>
+        <div id="history"></div>
     </aside>
 
-    
+    <!-- Displays the current day weather information -->
     <section id="section-top">
-        <h2 id="current-city">Mexico City
-            <span>(4/20/20023)</span>
-            <span>🌞</span>
-        </h2>
+        <h2 id="current-city"></h2>
+        <span id="current-date"></span>
+        <img id="icon">
         
         <div class="top-info">Temp:
             <span id="temp"></span>
@@ -42,13 +40,15 @@
         </div>
     </section>
 
+    <!-- Displays the 5 day forcast -->
     <section id="section-bottom">
 
         <h2 id="bottom-h2">5-Day Forcast:</h2>
 
+        <!-- Card 1 -->
         <div id="day-1" class="cards">
-            <h3 id="date-1">Mon</h3>
-            <div id="emoji-1">🌞</div>
+            <h3 id="date-1"></h3>
+            <img id="icon-1">
             <div>Temp:
                 <span id="temp-1"></span>
             </div>
@@ -60,9 +60,10 @@
             </div>
         </div>
 
+        <!-- Card 2 -->
         <div id="day-2" class="cards">
-            <h3 id="date-2">Tue</h3>
-            <div id="emoji-2">🌞</div>
+            <h3 id="date-2"></h3>
+            <img id="icon-2">
             <div>Temp:
                 <span id="temp-2"></span>
             </div>
@@ -74,9 +75,10 @@
             </div>
         </div>
 
+        <!-- Card 3 -->
         <div id="day-3" class="cards">
-            <h3 id="date-3">wed</h3>
-            <div id="emoji-3">🌞</div>
+            <h3 id="date-3"></h3>
+            <img id="icon-3">
             <div>Temp:
                 <span id="temp-3"></span>
             </div>
@@ -88,13 +90,14 @@
             </div>
         </div>
 
+        <!-- Card 4 -->
         <div id="day-4" class="cards">
-            <h3 id="date-4">tur</h3>
-            <div id="emoji-4">🌞</div>
+            <h3 id="date-4"></h3>
+            <img id="icon-4">
             <div>Temp:
                 <span id="temp-4"></span>
             </div>
-            <div id="wind-4">Wind:
+            <div>Wind:
                 <span id="wind-4"></span>
             </div>
             <div>Humidity:
@@ -102,9 +105,10 @@
             </div>
         </div>
 
+        <!-- Card 5 -->
         <div id="day-5" class="cards">
-            <h3 id="date-5">fri</h3>
-            <div id="emoji-5">🌞</div>
+            <h3 id="date-5"></h3>
+            <img id="icon-5">
             <div>Temp:
                 <span id="temp-5"></span>
             </div>
@@ -118,8 +122,8 @@
        
     </section>
     
-    
-    
+    <!-- Connects the Day.js Api -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
 </html>
