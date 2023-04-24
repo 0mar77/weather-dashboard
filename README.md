@@ -13,4 +13,6 @@
 - On the dashboard, the user will get the current day and the next 5 days' weather conditions
 - The user will be able get previously searched city info by clicking on the city name on the left side of the screen
 
+Link to deployed website:[https://0mar77.github.io/weather-dashboard/]
+
 ![Homepage](assets/Images/homepage.png)
