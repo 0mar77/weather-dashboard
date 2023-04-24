@@ -31,10 +31,8 @@ aside {
     margin: 10px;
 }
 
-#aside-h2 {
+label {
     font-size: xx-large;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 
 form {
@@ -43,7 +41,7 @@ form {
     margin-top: 10px;
 }
 
-#search {
+#city {
     font-size: x-large;
     margin-bottom: 10px;
     width: 97%;
@@ -68,12 +66,13 @@ button {
     padding-top: 10px
 }
 
-#mexico {
+#list-of-cities {
     background-color: lightgray;
     border-radius: 5px;
     padding: 5px;
     text-align: center;
     font-size: x-large;
+    margin-bottom: 5px;
 }
 
 #section-top {
@@ -86,7 +85,13 @@ button {
 
 #current-city {
     margin: 10px;
+    margin-bottom: 0px;
     font-size: xx-large;
+}
+
+#current-date {
+    font-size: x-large;
+    margin-left: 10px;
 }
 
 .top-info {
@@ -97,7 +102,6 @@ button {
 #section-bottom {
     grid-column: span 5;
     grid-row: span 3;
-    /* border:solid black; */
     display: grid;
     margin: 10px;
     color: white;
@@ -112,7 +116,7 @@ button {
     background-color:#05254d;
     grid-row: span 2;
     margin-right: 10px;
-    margin-bottom: 300px;
+    /* margin-bottom: 200px; */
     display: grid;
     padding: 10px;
 }
